@@ -1,0 +1,68 @@
+[tool.poetry]
+name = "hexagen-grc"
+version = "0.1.0"
+description = "HexaGen GRC Security Consultant - Offline Multi-Agent System"
+authors = ["HexaGen Team"]
+readme = "README.md"
+packages = [{include = "hexagen_grc", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.109.0"
+uvicorn = {extras = ["standard"], version = "^0.27.0"}
+pydantic = "^2.5.3"
+pydantic-settings = "^2.1.0"
+python-multipart = "^0.0.6"
+python-docx = "^1.1.0"
+openpyxl = "^3.1.2"
+pandas = "^2.1.4"
+chromadb = "^0.4.22"
+sentence-transformers = "^2.3.1"
+langchain = "^0.1.4"
+langchain-community = "^0.0.13"
+ollama = "^0.1.6"
+httpx = "^0.26.0"
+aiofiles = "^23.2.1"
+python-json-logger = "^2.0.7"
+pyyaml = "^6.0.1"
+jinja2 = "^3.1.3"
+typer = "^0.9.0"
+rich = "^13.7.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-asyncio = "^0.23.3"
+pytest-cov = "^4.1.0"
+black = "^24.1.1"
+ruff = "^0.1.14"
+mypy = "^1.8.0"
+httpx = "^0.26.0"
+
+[tool.poetry.scripts]
+hexagen = "hexagen_grc.cli:main"
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "N", "W"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
