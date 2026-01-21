@@ -1,0 +1,27 @@
+VariableKey,Placeholder,DataType,Required,Example_AR,Example_EN,SourceField
+CLIENT_NAME_AR,{{HX.CLIENT_NAME_AR}},text,TRUE,شركة HexaGen,HexaGen Company,client.name_ar
+CLIENT_NAME_EN,{{HX.CLIENT_NAME_EN}},text,FALSE,HexaGen Company,HexaGen Company,client.name_en
+POLICY_NAME_AR,{{HX.POLICY_NAME_AR}},text,TRUE,سياسة إدارة المخاطر السيبرانية,Cybersecurity Risk Management Policy,policy.name_ar
+POLICY_NAME_EN,{{HX.POLICY_NAME_EN}},text,FALSE,Cybersecurity Risk Management Policy,Cybersecurity Risk Management Policy,policy.name_en
+ISSUE_YEAR,{{HX.ISSUE_YEAR}},year,TRUE,2025,2025,dates.issue_year
+DOC_ID,{{HX.DOC_ID}},text,TRUE,CSD/CSPR/XXXX/001,POL-CRMR-001,doc.doc_id
+VERSION,{{HX.VERSION}},semver,TRUE,1.0,1.0,doc.version
+ISSUE_DATE,{{HX.ISSUE_DATE}},date,TRUE,01/10/2024,2024-10-01,dates.issue_date
+EFFECTIVITY_DATE,{{HX.EFFECTIVITY_DATE}},date,FALSE,01/12/2024,2024-12-01,dates.effectivity_date
+NEXT_REVIEW_DATE,{{HX.NEXT_REVIEW_DATE}},date,TRUE,01/11/2025,2025-11-01,dates.next_review_date
+CLASSIFICATION,{{HX.CLASSIFICATION}},enum,TRUE,داخلي,Internal,doc.classification
+SHARING,{{HX.SHARING}},enum,TRUE,برتقالي,Orange,doc.sharing_label
+APPLICABILITY,{{HX.APPLICABILITY}},text,TRUE,جميع الإدارات,All Departments,doc.applicability
+DEPARTMENT_OWNER,{{HX.DEPARTMENT_OWNER}},text,TRUE,إدارة الأمن السيبراني,Cybersecurity Department,org.department_owner
+DOC_TITLE,{{HX.DOC_TITLE}},text,TRUE,سياسة إدارة المخاطر السيبرانية,Cybersecurity Risk Management,doc.title
+CONFIDENTIALITY_LEVEL,{{HX.CONFIDENTIALITY_LEVEL}},enum,FALSE,مقيّد,Restricted,doc.confidentiality_level
+POLICY_CONTENT,{{HX.POLICY_CONTENT}},richtext,TRUE,(يُولّد تلقائياً),(Generated),generated.policy_blocks
+REFERENCES,{{HX.REFERENCES}},richtext,FALSE,NCA ECC; ISO 27001,NCA ECC; ISO 27001,generated.references
+CONTACT_INFO,{{HX.CONTACT_INFO}},richtext,FALSE,البريد: grc@client.sa,Email: grc@client.sa,generated.contact
+APPENDICES,{{HX.APPENDICES}},richtext,FALSE,ملحق أ: ...,Appendix A: ...,generated.appendices
+APPROVAL_NAME,{{HX.APPROVAL_NAME}},text,FALSE,محمد أحمد,Mohammed Ahmed,approvals.name
+APPROVAL_TITLE,{{HX.APPROVAL_TITLE}},text,FALSE,الرئيس التنفيذي,Chief Executive Officer,approvals.title
+APPROVAL_DATE,{{HX.APPROVAL_DATE}},date,FALSE,15/09/2024,2024-09-15,approvals.date
+PREPARED_BY,{{HX.PREPARED_BY}},text,FALSE,فريق الأمن السيبراني,Cybersecurity Team,doc.prepared_by
+REVIEWED_BY,{{HX.REVIEWED_BY}},text,FALSE,إدارة المخاطر,Risk Management,doc.reviewed_by
+REVISION_HISTORY,{{HX.REVISION_HISTORY}},table,FALSE,(جدول السجل),(History Table),generated.revision_table
